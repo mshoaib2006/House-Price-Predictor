@@ -3,8 +3,7 @@ import pickle
 import numpy as np
 import pandas as pd
 import os
-
-model_path = os.path.join("House_price_prediction", "model.pkl")
+model_path = os.path.join(os.path.dirname(__file__), "model.pkl")
 with open(model_path, "rb") as f:
     model = pickle.load(f)
 
@@ -66,3 +65,4 @@ if submit:
 
     except Exception as e:
         st.error(f" Error: {str(e)}")
+
