@@ -2,12 +2,9 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-
-import pickle
 import os
 
-# Path relative to app.py
-model_path = os.path.join("model.pkl")
+model_path = os.path.join("House_price_prediction", "model.pkl")
 with open(model_path, "rb") as f:
     model = pickle.load(f)
 
@@ -65,14 +62,7 @@ if submit:
         prediction = model.predict(input_df)[0]
 
         with st.spinner("Calculating..."):
-            
             st.success(f" **Estimated Property Value:** $ {prediction:,.2f}")
-
-           
 
     except Exception as e:
         st.error(f" Error: {str(e)}")
-
-
-
-
