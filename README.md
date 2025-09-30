@@ -5,7 +5,7 @@ House Price Prediction using Machine Learning (Linear Regression ). Includes EDA
 A machine learning project that predicts the price of a house based on its features.  
 The project includes **EDA**, **model training**, and a **Streamlit frontend** for real-time property price predictions.
 
-Live Demo: https://ms-house-price-predictor.streamlit.app/
+## Live Demo: https://ms-house-price-predictor.streamlit.app/
 
 ---
 
