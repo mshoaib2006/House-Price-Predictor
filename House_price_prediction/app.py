@@ -3,7 +3,8 @@ import pickle
 import numpy as np
 import pandas as pd
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open("/House_price_prediction/model.pkl", "rb"))
+
 
 st.set_page_config(page_title=" House Price Predictor", layout="centered")
 
@@ -66,5 +67,6 @@ if submit:
 
     except Exception as e:
         st.error(f" Error: {str(e)}")
+
 
 
